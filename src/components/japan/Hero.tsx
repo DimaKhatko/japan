@@ -15,7 +15,7 @@ export function Hero() {
         <div className="text-white animate-fade-up">
           <div className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-4 py-1.5 text-xs font-medium tracking-widest uppercase border border-white/20">
             <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
-            Point Camp · подорож року
+            Point Camp · подорож року +1 + А + 1
           </div>
 
           <h1 className="mt-5 font-display font-black leading-[0.92] text-6xl sm:text-7xl lg:text-8xl">
