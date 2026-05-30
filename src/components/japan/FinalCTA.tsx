@@ -224,7 +224,7 @@ export function FinalCTA() {
                       <FormControl>
                         <Textarea
                           rows={3}
-                          placeholder="Імʼя та вік дитини"
+                          placeholder="Хто планує поїздку? Напр.: Софія, 14 років, або родина з 3 осіб"
                           className="rounded-xl bg-white focus-visible:ring-violet-400"
                           {...field}
                         />
@@ -269,20 +269,20 @@ export function FinalCTA() {
 
           {/* Fallback contacts — always available as a backup */}
           <div className="mt-6 flex flex-col items-center gap-3 border-t border-violet-100 pt-6 sm:flex-row sm:justify-center">
-            <span className="text-sm text-foreground/50">Зручніше написати напряму?</span>
-            <div className="flex items-center gap-3">
+            <span className="text-sm text-foreground/50">Звʼязатись з нами напряму</span>
+            <div className="flex flex-wrap items-center justify-center gap-3">
               <a
                 href="tel:+380669217373"
-                className="inline-flex items-center gap-2 rounded-full border border-violet-200 px-4 py-2 text-sm font-medium text-violet-700 transition hover:bg-violet-50"
+                className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full border border-violet-200 px-4 py-2 text-sm font-medium text-violet-700 transition hover:bg-violet-50"
               >
                 <span>📞</span>
-                +38 066 921 73 73
+                <span className="whitespace-nowrap">+38 066 921 73 73</span>
               </a>
               <a
-                href="https://t.me/pointcamp"
+                href="https://t.me/point_camp"
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-violet-200 px-4 py-2 text-sm font-medium text-violet-700 transition hover:bg-violet-50"
+                className="inline-flex shrink-0 items-center gap-2 rounded-full border border-violet-200 px-4 py-2 text-sm font-medium text-violet-700 transition hover:bg-violet-50"
               >
                 <svg viewBox="0 0 24 24" className="h-4 w-4 fill-current" aria-hidden>
                   <path d="M9.7 15.3l-.4 4c.6 0 .8-.3 1.1-.6l2.7-2.5 5.5 4c1 .6 1.7.3 2-1l3.6-16.9c.3-1.5-.6-2.1-1.6-1.7L1 8.5C-.4 9.1-.4 10 .7 10.4l5.6 1.7L19 4.4c.6-.3 1.2-.1.7.3" />
