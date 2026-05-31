@@ -18,7 +18,7 @@ export function Hero() {
             Point Camp · Japan 2026
           </div>
 
-          <h1 className="mt-5 font-display font-black leading-[0.92] text-6xl sm:text-7xl lg:text-8xl">
+          <h1 className="mt-5 font-display font-[840] leading-[0.92] text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
             Подорож, що змінює уявлення про світ
           </h1>
 
