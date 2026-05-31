@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import logoJapan from "@/assets/logo-japan.png";
 
 const links = [
   { href: "#about", label: "Про подорож" },
@@ -30,14 +31,13 @@ export function Header() {
     >
       <div className="mx-auto max-w-7xl px-5 lg:px-8 h-16 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 group">
-          <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-primary text-primary-foreground font-display font-black text-lg shadow-red-glow group-hover:scale-105 transition-transform">
-            P
-          </span>
-          <span className="font-display font-extrabold tracking-tight text-ink leading-none">
-            Point Camp
-            <span className="block text-[10px] font-medium text-primary tracking-widest">
-              JAPAN · 2026
-            </span>
+          <img
+            src={logoJapan}
+            alt="Point Camp Japan"
+            className="h-8 md:h-10 w-auto group-hover:scale-105 transition-transform"
+          />
+          <span className="text-[10px] font-medium text-primary tracking-widest leading-none">
+            JAPAN · 2026
           </span>
         </a>
 
