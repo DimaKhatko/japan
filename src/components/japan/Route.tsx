@@ -45,7 +45,7 @@ export function Route() {
         <rect width="100%" height="100%" fill="url(#seigaiha)" />
       </svg>
 
-      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+      <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           {/* Left: heading + route line on a clean light panel (never on the waves) */}
           <div className="lg:col-span-5 rounded-2xl bg-background p-6 md:p-8 shadow-card">
