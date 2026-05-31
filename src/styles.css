@@ -255,7 +255,7 @@
     box-shadow: 0 1px 2px oklch(0 0 0 / 0.1);
   }
 
-  @keyframes sakura-fall {
+  @keyframes leaf-fall {
     0% {
       transform: translateY(-10vh) translateX(0) rotate(0deg);
       opacity: 0;
@@ -263,20 +263,27 @@
     10% {
       opacity: 0.9;
     }
+    50% {
+      transform: translateY(50vh) translateX(40px) rotate(220deg);
+    }
     100% {
-      transform: translateY(110vh) translateX(60px) rotate(360deg);
+      transform: translateY(110vh) translateX(80px) rotate(540deg);
       opacity: 0;
     }
   }
-  .sakura-petal {
+  .autumn-leaf {
     position: absolute;
-    width: 14px;
-    height: 14px;
-    background: var(--blossom);
-    border-radius: 100% 0 100% 0;
-    animation: sakura-fall linear infinite;
-    opacity: 0.85;
-    filter: drop-shadow(0 1px 2px oklch(0 0 0 / 0.1));
+    animation: leaf-fall linear infinite;
+    opacity: 0.9;
+    filter: drop-shadow(0 1px 2px oklch(0 0 0 / 0.15));
+    will-change: transform, opacity;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .autumn-leaf {
+      animation: none;
+      opacity: 0;
+    }
   }
 
   @keyframes fade-up {

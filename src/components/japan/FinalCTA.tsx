@@ -294,7 +294,7 @@ export function FinalCTA() {
         </div>
 
         <div className="mt-8 text-center text-sm text-foreground/45">
-          Point Camp · 桜 · 2026 — подорож, яку згадуватимуть усе життя.
+          Point Camp · 2026 — подорож, яку згадуватимуть усе життя.
         </div>
       </div>
 

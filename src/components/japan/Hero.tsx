@@ -59,7 +59,7 @@ export function Hero() {
           <div className="relative">
             <div className="absolute -top-8 -right-8 polaroid w-40 sm:w-52 rotate-6 float-slow">
               <div className="aspect-square bg-sakura rounded-sm" />
-              <div className="text-center mt-2 font-display text-sm">桜 · sakura</div>
+              <div className="text-center mt-2 font-display text-sm">sakura</div>
             </div>
             <div className="relative polaroid w-72 sm:w-96 lg:w-[440px] -rotate-3 shadow-polaroid">
               <img
