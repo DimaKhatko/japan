@@ -5,7 +5,7 @@ export function Route() {
   return (
     <section
       id="route"
-      className="relative isolate overflow-hidden py-20 lg:py-28"
+      className="relative isolate overflow-hidden py-16 lg:py-20"
       style={
         {
           "--sea-bg": "#EAF4FA",
@@ -45,31 +45,31 @@ export function Route() {
         <rect width="100%" height="100%" fill="url(#seigaiha)" />
       </svg>
 
-      <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        {/* Heading on a clean light panel so it stays readable over the waves */}
-        <div className="max-w-2xl rounded-2xl bg-background p-6 md:p-8 shadow-card">
-          <div className="text-primary font-semibold tracking-widest text-xs uppercase">
-            Маршрут
+      <div className="mx-auto max-w-6xl px-5 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          {/* Left: heading + route line on a clean light panel (never on the waves) */}
+          <div className="lg:col-span-5 rounded-2xl bg-background p-6 md:p-8 shadow-card">
+            <div className="text-primary font-semibold tracking-widest text-xs uppercase">
+              Маршрут
+            </div>
+            <h2 className="mt-3 font-display font-black text-4xl sm:text-5xl text-ink text-balance">
+              Масштаб пригоди. Наш маршрут по Японії
+            </h2>
+            <p className="mt-5 text-sm font-medium text-ink/70">
+              Tokio → Кіото → Нара → Осака → Tokio
+            </p>
           </div>
-          <h2 className="mt-3 font-display font-black text-4xl sm:text-5xl text-ink text-balance">
-            Масштаб пригоди. Наш маршрут по Японії
-          </h2>
-        </div>
 
-        {/* Full map in a light framed card floating on the seigaiha sea — no cropping */}
-        <div className="mt-12 mx-auto max-w-5xl rounded-2xl bg-background p-4 md:p-8 shadow-card">
-          <img
-            src={routeMap}
-            alt="Маршрут подорожі Японією: Токіо, Кіото, Нара, Осака"
-            loading="lazy"
-            className="w-full h-auto"
-          />
+          {/* Right: full map in a framed card floating on the seigaiha sea — no cropping */}
+          <div className="lg:col-span-7 rounded-2xl bg-background p-4 md:p-6 shadow-card">
+            <img
+              src={routeMap}
+              alt="Маршрут подорожі Японією: Токіо, Кіото, Нара, Осака"
+              loading="lazy"
+              className="w-full h-auto"
+            />
+          </div>
         </div>
-
-        {/* Compact route line — stays legible when the map shrinks on mobile */}
-        <p className="mt-8 text-center text-sm font-medium text-ink/70">
-          Tokio → Кіото → Нара → Осака → Tokio
-        </p>
       </div>
     </section>
   );
