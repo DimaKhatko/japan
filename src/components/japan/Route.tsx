@@ -46,22 +46,25 @@ export function Route() {
       </svg>
 
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
-        <div className="max-w-2xl">
+        {/* Heading on a clean light panel so it stays readable over the waves */}
+        <div className="max-w-2xl rounded-2xl bg-background p-6 md:p-8 shadow-card">
           <div className="text-primary font-semibold tracking-widest text-xs uppercase">
-            ルート · Маршрут
+            Маршрут
           </div>
           <h2 className="mt-3 font-display font-black text-4xl sm:text-5xl text-ink text-balance">
             Масштаб пригоди. Наш маршрут по Японії
           </h2>
         </div>
 
-        {/* Transparent-sea map sits on top of the waves */}
-        <img
-          src={routeMap}
-          alt="Маршрут подорожі Японією: Токіо, Кіото, Нара, Осака"
-          loading="lazy"
-          className="mt-12 mx-auto w-full h-auto max-w-5xl"
-        />
+        {/* Full map in a light framed card floating on the seigaiha sea — no cropping */}
+        <div className="mt-12 mx-auto max-w-5xl rounded-2xl bg-background p-4 md:p-8 shadow-card">
+          <img
+            src={routeMap}
+            alt="Маршрут подорожі Японією: Токіо, Кіото, Нара, Осака"
+            loading="lazy"
+            className="w-full h-auto"
+          />
+        </div>
 
         {/* Compact route line — stays legible when the map shrinks on mobile */}
         <p className="mt-8 text-center text-sm font-medium text-ink/70">
