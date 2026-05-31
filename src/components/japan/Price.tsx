@@ -2,21 +2,16 @@ const included = [
   "Проживання у 2-місних номерах у 3–4★ готелях",
   "Харчування: сніданки + ще один прийом їжі щодня",
   "Страхування на час поїздки",
-  "Весь транспорт по Японії, включно з Shinkansen",
+  "Весь транспорт у Японії, включно з Shinkansen, метро та міжміськими переїздами",
   "Супровід 24/7 командою PointCamp",
-  "Вхідні квитки та бронювання ключових локацій",
-  "Universal Studios Japan з Express Pass",
-  "teamLab — імерсивна галерея",
-  "Shibuya Sky — захід сонця над Токіо",
-  "Вхідні квитки в храми",
-  "Платні музеї та локації",
-  "Повна організація та координація",
+  "Вхідні квитки та бронювання до ключових локацій: Universal Studios Japan (з express-pass), teamLab, Shibuya Sky, храми, платні музеї та локації за маршрутом",
+  "Повна організація та координація поїздки командою PointCamp",
   "Сувеніри та мерч від PointCamp",
 ];
 
 const extras = [
   { label: "Переліт", price: "900–1200 €" },
-  { label: "Добирання до міста вильоту (Київ / Будапешт / Варшава / Київ)", price: "310 €" },
+  { label: "Добирання до міста вильоту (Київ – Будапешт/Варшава – Київ)", price: "~310 €" },
   { label: "Оформлення візи", price: "120 €" },
   { label: "Кишенькові витрати", price: "300 €" },
 ];
@@ -29,23 +24,15 @@ export function Price() {
           {/* Price card */}
           <aside className="lg:sticky lg:top-24">
             <div className="rounded-3xl bg-grad-red-navy text-white p-8 shadow-polaroid relative overflow-hidden">
-              <div className="absolute -right-10 -top-10 w-44 h-44 rounded-full bg-white/10" aria-hidden />
-              <div className="text-xs uppercase tracking-widest opacity-80">
-                料金 · Вартість
-              </div>
-              <div className="mt-3 font-display font-black text-6xl leading-none">
-                3150 €
-              </div>
+              <div
+                className="absolute -right-10 -top-10 w-44 h-44 rounded-full bg-white/10"
+                aria-hidden
+              />
+              <div className="text-xs uppercase tracking-widest opacity-80">料金 · Вартість</div>
+              <div className="mt-3 font-display font-black text-6xl leading-none">3150 €</div>
               <div className="mt-2 text-white/80">10 днів / 9 ночей</div>
 
               <div className="mt-7 space-y-2">
-                <div className="flex items-center gap-3 rounded-2xl bg-white/15 backdrop-blur px-4 py-3">
-                  <span className="text-2xl">🌸</span>
-                  <div>
-                    <div className="font-semibold">01.07 – 11.07.2026</div>
-                    <div className="text-xs text-white/75">літня група</div>
-                  </div>
-                </div>
                 <div className="flex items-center gap-3 rounded-2xl bg-white/15 backdrop-blur px-4 py-3">
                   <span className="text-2xl">🍁</span>
                   <div>
@@ -87,12 +74,10 @@ export function Price() {
             </ul>
 
             <div className="mt-12">
-              <h3 className="font-display font-bold text-2xl text-ink">
-                Оплачується окремо
-              </h3>
+              <h3 className="font-display font-bold text-2xl text-ink">Оплачується окремо</h3>
               <p className="text-ink/65 mt-1 text-sm">
-                Ми допоможемо з бронюванням квитків, добиранням до міста вильоту
-                та оформленням візи.
+                Ми допоможемо з бронюванням квитків, добиранням до міста вильоту та оформленням
+                візи.
               </p>
               <div className="mt-5 divide-y divide-border rounded-2xl bg-card border border-border shadow-card overflow-hidden">
                 {extras.map((e) => (
@@ -101,9 +86,7 @@ export function Price() {
                     className="flex flex-wrap items-center justify-between gap-3 px-5 py-4"
                   >
                     <span className="text-ink/85">{e.label}</span>
-                    <span className="font-display font-bold text-primary">
-                      {e.price}
-                    </span>
+                    <span className="font-display font-bold text-primary">{e.price}</span>
                   </div>
                 ))}
               </div>

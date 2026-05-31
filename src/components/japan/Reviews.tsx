@@ -1,17 +1,17 @@
 const reviews = [
   {
-    name: "Анна, мама Софії",
-    text: "Софія повернулася іншою людиною. Розповідає про Японію щодня. Дякую за безпеку і чуйність.",
+    name: "Мама Андрія",
+    text: "Хлопці, від нашої родини вам велика подяка) Андрій у дикому захопленні від поїздки) я такого щасливого сина давно не бачила)",
     rotate: "-rotate-2",
   },
   {
-    name: "Максим, 16",
-    text: "Це був найкращий тиждень мого життя. Akihabara, teamLab, Shibuya Sky — як у фільмі.",
+    name: "Батьки Кості",
+    text: "Добрий вечір! Сьогодні отримали дуже приємний сюрприз у вигляді фото, Костя щасливий, а ми ще раз безмежно вам вдячні за прекрасну та незабутню подорож до Японії ❤️🙏",
     rotate: "rotate-1",
   },
   {
-    name: "Олена, мама Артема",
-    text: "Спокій за дитину 24/7. Хлопці супроводжуючі — золото. Артем уже планує наступну подорож.",
+    name: "Мама учасника",
+    text: "Добрий день, Дмитро. Дуже дякую за неймовірну подорож до далекої Японії, за новий безцінний досвід, що отримав мій син. Дитина приїхала не тільки з новими враженнями та почуттями, а й з новою мотивацією до життя.",
     rotate: "rotate-2",
   },
 ];
@@ -31,17 +31,17 @@ export function Reviews() {
 
         <div className="mt-10 flex flex-wrap gap-6 items-center justify-center lg:justify-start">
           <div className="rounded-2xl bg-card border border-border px-5 py-4 shadow-card flex items-center gap-3">
-            <div className="font-display font-black text-3xl text-primary">4.8</div>
+            <div className="font-display font-black text-3xl text-primary">4,8 ★</div>
             <div className="text-sm">
-              <div className="font-semibold">Google Maps</div>
-              <div className="text-ink/60">★ ★ ★ ★ ★</div>
+              <div className="font-semibold">Google Maps · Point Camp</div>
+              <div className="text-ink/60">(17) · Дитячий табір</div>
             </div>
           </div>
           <div className="rounded-2xl bg-card border border-border px-5 py-4 shadow-card flex items-center gap-3">
-            <div className="font-display font-black text-3xl text-primary">96%</div>
+            <div className="font-display font-black text-3xl text-primary">98%</div>
             <div className="text-sm">
-              <div className="font-semibold">рекомендують</div>
-              <div className="text-ink/60">Facebook</div>
+              <div className="font-semibold">рекомендували · Facebook</div>
+              <div className="text-ink/60">Point Camp · 64 відгуки</div>
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
 const stops = [
-  { city: "Токіо", icon: "✈️", note: "Приліт" },
-  { city: "Кіото", icon: "🚄", note: "Shinkansen" },
+  { city: "Tokio", icon: "✈️", note: "Приліт" },
+  { city: "Кіото", icon: "🚄", note: "Потягом" },
   { city: "Нара", icon: "🚆", note: "Потягом" },
   { city: "Осака", icon: "🚆", note: "Потягом" },
-  { city: "Токіо", icon: "🚄", note: "Shinkansen" },
-  { city: "Дім", icon: "🛫", note: "Виліт" },
+  { city: "Tokio", icon: "🚄", note: "Потягом" },
+  { city: "Tokio", icon: "🛫", note: "Виліт" },
 ];
 
 export function Route() {
@@ -16,10 +16,10 @@ export function Route() {
             ルート · Маршрут
           </div>
           <h2 className="mt-3 font-display font-black text-4xl sm:text-5xl text-ink text-balance">
-            Маршрут пригоди
+            Масштаб пригоди. Наш маршрут по Японії
           </h2>
           <p className="mt-4 text-ink/70 text-lg">
-            Чотири міста — чотири історії. Все продумано до Shinkansen.
+            Tokio · Кіото · Нара · Осака — чотири міста, чотири історії.
           </p>
         </div>
 
@@ -47,9 +47,7 @@ export function Route() {
                 <div className="relative z-10 w-16 h-16 rounded-full bg-card border-2 border-primary flex items-center justify-center text-2xl shadow-card">
                   {s.icon}
                 </div>
-                <div className="mt-3 font-display font-bold text-lg text-ink">
-                  {s.city}
-                </div>
+                <div className="mt-3 font-display font-bold text-lg text-ink">{s.city}</div>
                 <div className="text-xs text-ink/60 uppercase tracking-wider">{s.note}</div>
               </li>
             ))}

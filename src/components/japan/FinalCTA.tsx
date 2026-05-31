@@ -96,11 +96,11 @@ export function FinalCTA() {
             連絡 · Заявка
           </div>
           <h2 className="mt-4 text-balance font-display text-4xl font-black text-violet-700 sm:text-5xl">
-            Поїхали з нами до Японії
+            Хочете поїхати з нами до Японії?
           </h2>
           <p className="mx-auto mt-4 max-w-md text-base text-foreground/70">
-            Залиште свої контакти — і ми звʼяжемося з Вами, щоб спокійно розповісти про поїздку та
-            відповісти на всі запитання.
+            Залиште заявку — і ми звʼяжемося з вами, розкажемо деталі й допоможемо з усім: від
+            квитків до візи.
           </p>
         </div>
 
@@ -272,11 +272,11 @@ export function FinalCTA() {
             <span className="text-sm text-foreground/50">Звʼязатись з нами напряму</span>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <a
-                href="tel:+380669217373"
+                href="tel:+380662217373"
                 className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-full border border-violet-200 px-4 py-2 text-sm font-medium text-violet-700 transition hover:bg-violet-50"
               >
                 <span>📞</span>
-                <span className="whitespace-nowrap">+38 066 921 73 73</span>
+                <span className="whitespace-nowrap">+38 066 221 73 73</span>
               </a>
               <a
                 href="https://t.me/point_camp"

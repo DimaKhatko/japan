@@ -57,7 +57,7 @@ export function Header() {
           href="#contact"
           className="hidden md:inline-flex items-center gap-2 rounded-2xl bg-primary text-primary-foreground px-4 py-2 text-sm font-semibold shadow-card hover:brightness-110 transition"
         >
-          Хочу поїхати
+          Залишити заявку
         </a>
 
         <button
@@ -87,7 +87,7 @@ export function Header() {
               onClick={() => setOpen(false)}
               className="mt-2 inline-flex justify-center rounded-2xl bg-primary text-primary-foreground px-4 py-3 font-semibold"
             >
-              Хочу поїхати
+              Залишити заявку
             </a>
           </div>
         </div>
