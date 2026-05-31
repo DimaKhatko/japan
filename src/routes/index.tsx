@@ -10,7 +10,6 @@ import { Route as RouteSection } from "@/components/japan/Route";
 import { Program } from "@/components/japan/Program";
 import { Price } from "@/components/japan/Price";
 import { FinalCTA } from "@/components/japan/FinalCTA";
-import { Sakura } from "@/components/japan/Sakura";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -46,7 +45,6 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <div className="relative bg-background text-ink min-h-screen overflow-x-hidden">
-      <Sakura />
       <Header />
       <main>
         <Hero />
