@@ -106,6 +106,28 @@ function RootShell({ children }: { children: React.ReactNode }) {
           }}
         />
         {/* End Google Tag Manager */}
+        {/* Fonts — loaded async (off the critical path) so they don't block first paint.
+            Primary text uses self-hosted "Kyiv Type Sans" (font-display: swap); the
+            Google stylesheet only provides the Zen Maru Gothic fallback. */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preload"
+          as="style"
+          href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "(function(){var l=document.createElement('link');l.rel='stylesheet';l.href='https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap';l.media='print';l.onload=function(){this.media='all'};document.head.appendChild(l);})();",
+          }}
+        />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap"
+          />
+        </noscript>
         <HeadContent />
       </head>
       <body>
