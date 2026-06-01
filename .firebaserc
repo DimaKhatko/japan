@@ -1,5 +1,15 @@
 {
   "projects": {
-    "default": "point-camp-winter"
-  }
+    "default": "pointcamp-a1a24"
+  },
+  "targets": {
+    "pointcamp-a1a24": {
+      "hosting": {
+        "japan": [
+          "pointcamp-japan"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }

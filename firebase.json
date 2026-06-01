@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "target": "japan",
     "public": "dist/client",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
