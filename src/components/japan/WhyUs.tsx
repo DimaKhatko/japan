@@ -18,7 +18,7 @@ export function WhyUs() {
             <div className="polaroid -rotate-3 relative tape">
               <img
                 src={groupImg}
-                alt="Команда Point Camp"
+                alt="Команда Point Camp Japan під час подорожі"
                 loading="lazy"
                 width={1024}
                 height={1024}
@@ -29,7 +29,7 @@ export function WhyUs() {
             <div className="polaroid rotate-2 mt-10">
               <img
                 src={kyotoImg}
-                alt="Храм у Кіото"
+                alt="Група учасників біля пагоди Ясака в Кіото"
                 loading="lazy"
                 width={1024}
                 height={1024}
@@ -40,11 +40,11 @@ export function WhyUs() {
             <div className="polaroid rotate-3 col-span-2 max-w-sm mx-auto">
               <img
                 src={oceanImg}
-                alt="Олені у Нарі"
+                alt="Учасники Point Camp на узбережжі океану в Японії"
                 loading="lazy"
                 width={1024}
                 height={1024}
-                className="w-full aspect-[16/10] object-cover rounded-sm"
+                className="w-full aspect-[4/3] object-cover rounded-sm"
               />
               <div className="text-center mt-2 text-sm font-display">Ocean</div>
             </div>

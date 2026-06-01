@@ -13,6 +13,7 @@ const days = [
     day: 1,
     title: "Приліт & Tokio",
     img: tokyo,
+    alt: "Нічний неон вулиць Токіо",
     text: (
       <>
         Перший день — час мʼякого занурення. Приземляємося, відчуваємо ритм міста й без поспіху
@@ -27,6 +28,7 @@ const days = [
     day: 2,
     title: "Shibuya & Harajuku",
     img: sibuya,
+    alt: "Перехід Сібуя в центрі Токіо",
     text: (
       <>
         Пульс <b>Tokio</b>. Починаємо з легендарної <b>Shibuya</b>: знаменитий перехід, неон та
@@ -41,6 +43,7 @@ const days = [
     day: 3,
     title: "Akihabara",
     img: akihabara,
+    alt: "Аніме-квартал Акіхабара в Токіо",
     text: (
       <>
         Занурення в електричне серце японської поп-культури — легендарну <b>Акіхабару</b>.
@@ -55,6 +58,7 @@ const days = [
     day: 4,
     title: "Переїзд у Kyoto",
     img: kyoto,
+    alt: "Пагода Ясака у старовинному Кіото",
     text: (
       <>
         Вранці сідаємо на <b>Shinkansen</b> і мчимо до <b>Кіото</b> — колишньої столиці Японії.
@@ -69,6 +73,7 @@ const days = [
     day: 5,
     title: "Nara",
     img: nara,
+    alt: "Оленятко серед храмових ліхтарів у Нарі",
     text: (
       <>
         Подорож у справжню казку, де природа та історія існують в ідеальній гармонії. Головна емоція
@@ -83,6 +88,7 @@ const days = [
     day: 6,
     title: "Kyoto & teamLab",
     img: teamlab,
+    alt: "Цифрова інсталяція teamLab у Японії",
     text: (
       <>
         Дивимось величні храми <b>Кіото</b>: від сяйва <b>Золотого павільйону</b> до витончених
@@ -97,6 +103,7 @@ const days = [
     day: 7,
     title: "Osaka",
     img: osaka,
+    alt: "Неонова вивіска Гліко в Осаці",
     text: (
       <>
         Неонове серце Японії. Побачимо <b>Дотонборі</b>: легендарний <b>Гліко Мен</b>, велетенські
@@ -111,6 +118,7 @@ const days = [
     day: 8,
     title: "Universal Studios",
     img: universal,
+    alt: "Парк розваг Universal Studios Japan",
     text: (
       <>
         Повне занурення у світ мрій та адреналіну в <b>Universal Studios Japan</b>. Цілий день,
@@ -125,6 +133,7 @@ const days = [
     day: 9,
     title: "Tokyo & Shibuya Sky",
     img: shibuyaSky,
+    alt: "Панорама Токіо з оглядового майданчика Shibuya Sky",
     text: (
       <>
         Повертаємось до <b>Tokio</b> і проводимо фінальний день легко: улюблені райони, прогулянки{" "}
@@ -162,7 +171,7 @@ export function Program() {
               <div className="relative aspect-[4/3] overflow-hidden">
                 <img
                   src={d.img}
-                  alt={d.title}
+                  alt={d.alt}
                   loading="lazy"
                   width={1024}
                   height={768}

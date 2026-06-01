@@ -8,11 +8,11 @@ export function Omotenashi() {
           <div className="polaroid rotate-[-4deg] max-w-md mx-auto relative">
             <img
               src={omotenashiImg}
-              alt="Японська філософія гостинності"
+              alt="Зустріч із японським шеф-кухарем — філософія омотенаші"
               loading="lazy"
               width={1024}
               height={1024}
-              className="w-full aspect-[4/3] object-cover rounded-sm"
+              className="w-full aspect-square object-cover rounded-sm"
             />
             <div className="text-center mt-3 font-display text-lg">おもてなし</div>
           </div>

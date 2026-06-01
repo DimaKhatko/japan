@@ -13,7 +13,19 @@ import m09 from "@/assets/moments/moment-09.webp";
 import m10 from "@/assets/moments/moment-10.webp";
 import m11 from "@/assets/moments/moment-11.webp";
 
-const moments = [m01, m02, m03, m04, m05, m06, m07, m08, m09, m10, m11];
+const moments = [
+  { src: m01, alt: "Токійська вежа з висоти — подорож Point Camp Japan" },
+  { src: m02, alt: "Олені в Нарі поряд з учасниками Point Camp Japan" },
+  { src: m03, alt: "Японські суші під час подорожі Point Camp Japan" },
+  { src: m04, alt: "Цифрова інсталяція teamLab у Токіо — Point Camp Japan" },
+  { src: m05, alt: "Манга й аніме-культура Японії — Point Camp Japan" },
+  { src: m06, alt: "Ресторан у Камакурі — подорож Point Camp Japan" },
+  { src: m07, alt: "Суші-шеф готує страву в Японії — Point Camp Japan" },
+  { src: m08, alt: "Храм у Камакурі — подорож підлітків Point Camp Japan" },
+  { src: m09, alt: "Пагода храму в Камакурі — Point Camp Japan" },
+  { src: m10, alt: "Вулиці Токіо — подорож Point Camp Japan" },
+  { src: m11, alt: "Перехрестя Сібуя в Токіо — Point Camp Japan" },
+];
 
 export function Moments() {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -60,11 +72,11 @@ export function Moments() {
           ref={scrollRef}
           className="flex gap-4 overflow-x-auto px-5 lg:px-8 pr-12 lg:pr-20 snap-x snap-mandatory scroll-pl-5 lg:scroll-pl-8 [-ms-overflow-style:none] [scrollbar-width:none] [-webkit-overflow-scrolling:touch] [&::-webkit-scrollbar]:hidden"
         >
-          {moments.map((src, i) => (
+          {moments.map(({ src, alt }, i) => (
             <img
               key={i}
               src={src}
-              alt="Момент з подорожі Point Camp Japan"
+              alt={alt}
               loading="lazy"
               className="h-[300px] lg:h-[420px] w-auto shrink-0 snap-start rounded-2xl object-cover shadow-card"
             />
