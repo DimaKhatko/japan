@@ -1,6 +1,6 @@
-import groupImg from "@/assets/group.jpg";
-import kyotoImg from "@/assets/kyoto.jpg";
-import naraImg from "@/assets/nara.jpg";
+import groupImg from "@/assets/group.webp";
+import kyotoImg from "@/assets/kyoto.webp";
+import naraImg from "@/assets/nara.webp";
 
 const trust = [
   { num: "15+", label: "років роботи з підлітками" },

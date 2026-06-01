@@ -1,12 +1,12 @@
-import tokyo from "@/assets/tokyo.jpg";
-import harajuku from "@/assets/harajuku.jpg";
-import akihabara from "@/assets/akihabara.jpg";
-import kyoto from "@/assets/kyoto.jpg";
-import nara from "@/assets/nara.jpg";
-import teamlab from "@/assets/teamlab.jpg";
-import osaka from "@/assets/osaka.jpg";
-import universal from "@/assets/universal.jpg";
-import shibuyaSky from "@/assets/shibuya-sky.jpg";
+import tokyo from "@/assets/tokyo.webp";
+import sibuya from "@/assets/sibuya.webp";
+import akihabara from "@/assets/akihabara.webp";
+import kyoto from "@/assets/kyoto.webp";
+import nara from "@/assets/nara.webp";
+import teamlab from "@/assets/teamlab.webp";
+import osaka from "@/assets/osaka.webp";
+import universal from "@/assets/universal.webp";
+import shibuyaSky from "@/assets/shibuya-sky.webp";
 
 const days = [
   {
@@ -26,7 +26,7 @@ const days = [
   {
     day: 2,
     title: "Shibuya & Harajuku",
-    img: harajuku,
+    img: sibuya,
     text: (
       <>
         Пульс <b>Tokio</b>. Починаємо з легендарної <b>Shibuya</b>: знаменитий перехід, неон та

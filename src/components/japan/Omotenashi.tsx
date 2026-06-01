@@ -1,4 +1,4 @@
-import omotenashiImg from "@/assets/omotenashi.jpg";
+import omotenashiImg from "@/assets/omotenashi.webp";
 
 export function Omotenashi() {
   return (
