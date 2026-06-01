@@ -78,6 +78,8 @@ export function Moments() {
               src={src}
               alt={alt}
               loading="lazy"
+              width={1000}
+              height={1250}
               className="h-[300px] lg:h-[420px] w-auto shrink-0 snap-start rounded-2xl object-cover shadow-card"
             />
           ))}

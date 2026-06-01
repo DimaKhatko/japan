@@ -1,4 +1,5 @@
-import heroImg from "@/assets/hero-japan.webp";
+import heroMobile from "@/assets/hero-japan-mobile.webp";
+import heroDesktop from "@/assets/hero-japan-desktop.webp";
 
 export function Hero() {
   return (
@@ -62,13 +63,18 @@ export function Hero() {
               <div className="text-center mt-2 font-display text-sm">sakura</div>
             </div>
             <div className="relative polaroid w-72 sm:w-96 lg:w-[440px] -rotate-3 shadow-polaroid">
-              <img
-                src={heroImg}
-                alt="Японія: Фудзі, торі, сакура, оригамі журавлі та коі"
-                className="w-full aspect-[4/3] object-cover rounded-sm"
-                width={1536}
-                height={1280}
-              />
+              <picture>
+                <source media="(min-width:1024px)" srcSet={heroDesktop} />
+                <img
+                  src={heroMobile}
+                  alt="Японія: Фудзі, торі, сакура, оригамі журавлі та коі"
+                  className="w-full aspect-[4/3] object-cover rounded-sm"
+                  width={900}
+                  height={1200}
+                  fetchPriority="high"
+                  decoding="async"
+                />
+              </picture>
               <div className="text-center mt-3 font-display text-base text-ink">
                 Point Camp · Japan ’26
               </div>
