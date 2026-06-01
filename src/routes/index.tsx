@@ -9,6 +9,7 @@ import { Omotenashi } from "@/components/japan/Omotenashi";
 import { Route as RouteSection } from "@/components/japan/Route";
 import { Program } from "@/components/japan/Program";
 import { Price } from "@/components/japan/Price";
+import { Moments } from "@/components/japan/Moments";
 import { FinalCTA } from "@/components/japan/FinalCTA";
 
 export const Route = createFileRoute("/")({
@@ -56,6 +57,7 @@ function Index() {
         <RouteSection />
         <Program />
         <Price />
+        <Moments />
         <FinalCTA />
       </main>
     </div>
