@@ -53,6 +53,12 @@ export async function sendToTelegram(data: ApplicationData): Promise<SendResult>
       return { ok: false, error: `Telegram API responded with ${res.status}.` };
     }
 
+    // Conversion event for GTM — only on confirmed success.
+    if (typeof window !== "undefined") {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "lead_submit" });
+    }
+
     return { ok: true };
   } catch (err) {
     return {
