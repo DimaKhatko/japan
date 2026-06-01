@@ -1,6 +1,6 @@
 import groupImg from "@/assets/group.webp";
-import kyotoImg from "@/assets/kyoto.webp";
-import naraImg from "@/assets/nara.webp";
+import kyotoImg from "@/assets/whyus-kyoto.webp";
+import oceanImg from "@/assets/whyus-ocean.webp";
 
 const trust = [
   { num: "15+", label: "років роботи з підлітками" },
@@ -39,14 +39,14 @@ export function WhyUs() {
             </div>
             <div className="polaroid rotate-3 col-span-2 max-w-sm mx-auto">
               <img
-                src={naraImg}
+                src={oceanImg}
                 alt="Олені у Нарі"
                 loading="lazy"
                 width={1024}
                 height={1024}
                 className="w-full aspect-[16/10] object-cover rounded-sm"
               />
-              <div className="text-center mt-2 text-sm font-display">Nara · 鹿</div>
+              <div className="text-center mt-2 text-sm font-display">Ocean</div>
             </div>
           </div>
           {/* Origami crane SVG */}
