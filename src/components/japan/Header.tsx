@@ -2,13 +2,14 @@ import { useEffect, useState } from "react";
 import logoJapan from "@/assets/logo-japan.png";
 import logoJapanDark from "@/assets/logo-japan-dark.png";
 
-const links = [
+const links: { href: string; label: string; external?: boolean }[] = [
   { href: "#about", label: "Про подорож" },
   { href: "#why", label: "Чому з нами" },
   { href: "#route", label: "Маршрут" },
   { href: "#program", label: "Програма" },
   { href: "#price", label: "Вартість" },
   { href: "#contact", label: "Контакти" },
+  { href: "https://www.pointcamp.com.ua/croatia/", label: "Croatia'26", external: true },
 ];
 
 export function Header() {
@@ -74,6 +75,8 @@ export function Header() {
             <a
               key={l.href}
               href={l.href}
+              target={l.external ? "_blank" : undefined}
+              rel={l.external ? "noopener noreferrer" : undefined}
               className={`text-sm transition-colors relative after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 hover:after:w-full after:transition-all ${
                 scrolled
                   ? "text-ink/75 hover:text-primary after:bg-primary"
@@ -108,6 +111,8 @@ export function Header() {
               <a
                 key={l.href}
                 href={l.href}
+                target={l.external ? "_blank" : undefined}
+                rel={l.external ? "noopener noreferrer" : undefined}
                 onClick={() => setOpen(false)}
                 className="text-base text-ink py-2 border-b border-border/60"
               >

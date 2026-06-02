@@ -25,7 +25,7 @@ const formSchema = z.object({
     .min(1, { message: "Вкажіть e-mail" })
     .email({ message: "Перевірте, будь ласка, адресу e-mail" }),
   promo: z.string().trim().optional(),
-  children: z.string().trim().optional(),
+  children: z.string().trim().min(1, { message: "Це поле обовʼязкове" }),
   // Honeypot — must stay empty for real visitors.
   website: z.string().optional(),
 });
@@ -217,10 +217,7 @@ export function FinalCTA() {
                   name="children"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>
-                        Інформація про дітей{" "}
-                        <span className="font-normal text-foreground/40">(за бажанням)</span>
-                      </FormLabel>
+                      <FormLabel>Інформація про учасника</FormLabel>
                       <FormControl>
                         <Textarea
                           rows={3}

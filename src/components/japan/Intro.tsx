@@ -41,7 +41,7 @@ export function Intro() {
             はじめに · Знайомство
           </div>
           <h2 className="mt-3 font-display font-black text-4xl sm:text-5xl text-ink text-balance">
-            Подорож, на яку чекатимуть роками
+            Подорож, про яку мріють роками
           </h2>
           <p className="mt-4 text-ink/70 text-lg">
             Подорож у молодіжному форматі: драйв і відпочинок у балансі, щоденні рефлексії. Учасники

@@ -1,3 +1,5 @@
+import { Star } from "lucide-react";
+
 const reviews = [
   {
     name: "Мама Андрія",
@@ -31,7 +33,9 @@ export function Reviews() {
 
         <div className="mt-10 flex flex-wrap gap-6 items-center justify-center lg:justify-start">
           <div className="rounded-2xl bg-card border border-border px-5 py-4 shadow-card flex items-center gap-3">
-            <div className="font-display font-black text-3xl text-primary">4,8 ★</div>
+            <div className="font-display font-black text-3xl text-primary flex items-center gap-1.5">
+              4,8 <Star className="h-6 w-6 fill-current" aria-hidden />
+            </div>
             <div className="text-sm">
               <div className="font-semibold">Google Maps · Point Camp</div>
               <div className="text-ink/60">(17) · Дитячий табір</div>
