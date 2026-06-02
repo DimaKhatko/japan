@@ -19,13 +19,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Point Camp Japan 2026: 10 днів / 9 ночей у Токіо, Кіото, Нарі та Осаці. Маленька група, перевірений маршрут, 3150 €.",
+          "Подорож до Японії для підлітків та молоді: Токіо, Кіото, Нара, Осака. Досвід, менторство і безпека — 10 днів, що змінюють уявлення про світ.",
       },
       { property: "og:title", content: "Point Camp · Japan 2026" },
       {
         property: "og:description",
         content:
-          "Подорож до Японії з Point Camp: Tokyo · Kyoto · Nara · Osaka. 10 днів / 9 ночей. 3150 €.",
+          "Подорож до Японії для підлітків та молоді: Токіо, Кіото, Нара, Осака. Досвід, менторство і безпека — 10 днів, що змінюють уявлення про світ.",
       },
       { property: "og:type", content: "website" },
       { property: "og:url", content: "https://japan.pointcamp.com.ua/" },
