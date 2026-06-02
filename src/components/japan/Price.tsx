@@ -36,7 +36,7 @@ export function Price() {
                 <div className="flex items-center gap-3 rounded-2xl bg-white/15 backdrop-blur px-4 py-3">
                   <span className="text-2xl">🍁</span>
                   <div>
-                    <div className="font-semibold">21.10 – 31.10.2026</div>
+                    <div className="font-semibold">21.10 – 30.10.2026</div>
                     <div className="text-xs text-white/75">осіння група</div>
                   </div>
                 </div>

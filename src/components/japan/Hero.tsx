@@ -44,7 +44,7 @@ export function Hero() {
           </div>
 
           <div className="mt-10 text-sm text-white/85 tracking-wide">
-            10 днів / 9 ночей · Tokio–Кіото–Нара–Осака · мала група · 21–31 жовтня 2026 · 3150 €
+            10 днів / 9 ночей · Tokio–Кіото–Нара–Осака · мала група · 21–30 жовтня 2026 · 3150 €
           </div>
         </div>
 
