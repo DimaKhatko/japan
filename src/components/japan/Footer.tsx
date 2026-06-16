@@ -83,10 +83,10 @@ export function Footer() {
                       href={c.href}
                       target={c.external ? "_blank" : undefined}
                       rel={c.external ? "noopener noreferrer" : undefined}
-                      className="inline-flex items-center gap-2 text-white/70 transition-colors hover:text-white"
+                      className="flex min-w-0 items-start gap-2 text-white/70 transition-colors hover:text-white"
                     >
-                      <c.icon className="h-4 w-4 shrink-0 text-secondary" aria-hidden />
-                      <span>{c.label}</span>
+                      <c.icon className="mt-0.5 h-4 w-4 shrink-0 text-secondary" aria-hidden />
+                      <span className="min-w-0 break-words">{c.label}</span>
                     </a>
                   </li>
                 ))}
