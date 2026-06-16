@@ -26,10 +26,6 @@ const socials = [
 
 const docs = [
   {
-    href: "https://drive.google.com/file/d/1OFvq9GX9-4brPLVxUoqpcWETbJV-_555/preview",
-    label: "Публічна оферта",
-  },
-  {
     href: "https://drive.google.com/file/d/16D4I7OvCw2L4-G1QejjEtVx3G4P448ob/preview",
     label: "Обробка персональних даних",
   },
