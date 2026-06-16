@@ -11,6 +11,8 @@ import { Program } from "@/components/japan/Program";
 import { Price } from "@/components/japan/Price";
 import { Moments } from "@/components/japan/Moments";
 import { FinalCTA } from "@/components/japan/FinalCTA";
+import { Footer } from "@/components/japan/Footer";
+import { StickyApplyButton } from "@/components/japan/StickyApplyButton";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -55,6 +57,8 @@ function Index() {
         <Moments />
         <FinalCTA />
       </main>
+      <Footer />
+      <StickyApplyButton />
     </div>
   );
 }

@@ -294,14 +294,6 @@ export function FinalCTA() {
           Point Camp · 2026 — подорож, яку згадуватимуть усе життя.
         </div>
       </div>
-
-      {/* Sticky mobile CTA — quick scroll to the form */}
-      <a
-        href="#contact"
-        className="fixed bottom-4 left-4 right-4 z-50 inline-flex items-center justify-center gap-2 rounded-2xl bg-violet-600 px-5 py-4 font-semibold text-white shadow-lg md:hidden"
-      >
-        ✈️ Залишити заявку
-      </a>
     </section>
   );
 }
