@@ -15,13 +15,13 @@ const contacts = [
   { href: "https://t.me/point_camp", icon: Send, label: "Telegram", external: true },
   { href: "viber://chat?number=%2B380662217373", icon: MessageCircle, label: "Viber" },
   { href: "https://wa.me/+380662217373", icon: MessageSquare, label: "WhatsApp", external: true },
-  { href: "mailto:contact@pointcamp.com.ua", icon: Mail, label: "contact@pointcamp.com.ua" },
+  { href: "mailto:contact@pointcamp.com.ua", icon: Mail, label: "Написати на e-mail" },
 ];
 
 const socials = [
   { href: "https://www.instagram.com/point_camp", icon: Instagram, label: "Instagram" },
   { href: "https://facebook.com/pointcamp", icon: Facebook, label: "Facebook" },
-  { href: "https://t.me/point_camp", icon: Send, label: "Telegram" },
+  { href: "https://t.me/pointcamp", icon: Send, label: "Telegram" },
 ];
 
 const docs = [
@@ -83,10 +83,10 @@ export function Footer() {
                       href={c.href}
                       target={c.external ? "_blank" : undefined}
                       rel={c.external ? "noopener noreferrer" : undefined}
-                      className="flex min-w-0 items-start gap-2 text-white/70 transition-colors hover:text-white"
+                      className="inline-flex items-center gap-2 text-white/70 transition-colors hover:text-white"
                     >
-                      <c.icon className="mt-0.5 h-4 w-4 shrink-0 text-secondary" aria-hidden />
-                      <span className="min-w-0 break-words">{c.label}</span>
+                      <c.icon className="h-4 w-4 shrink-0 text-secondary" aria-hidden />
+                      <span>{c.label}</span>
                     </a>
                   </li>
                 ))}
