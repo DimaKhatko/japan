@@ -1,5 +1,6 @@
 import heroMobile from "@/assets/hero-japan-mobile.webp";
 import heroDesktop from "@/assets/hero-japan-desktop.webp";
+import { SPOTS_LEFT, spotsNoun } from "@/lib/config";
 
 export function Hero() {
   return (
@@ -22,6 +23,13 @@ export function Hero() {
           <h1 className="mt-5 font-display font-[840] leading-[0.92] text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
             Подорож, що змінює уявлення про світ
           </h1>
+
+          <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-4 py-1.5 text-xs font-medium tracking-widest uppercase border border-white/20">
+            <span className="w-2 h-2 rounded-full bg-white" />
+            {SPOTS_LEFT === 0
+              ? "Набір закрито · лист очікування"
+              : `Останні ${SPOTS_LEFT} ${spotsNoun(SPOTS_LEFT)}`}
+          </div>
 
           <p className="mt-6 text-lg lg:text-xl text-white/90 max-w-md text-balance">
             10 днів у Японії для підлітків та молоді. Tokio, Кіото, Нара, Осака — маленькою групою,

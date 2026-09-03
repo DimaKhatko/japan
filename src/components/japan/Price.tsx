@@ -1,3 +1,5 @@
+import { SPOTS_LEFT, spotsNoun } from "@/lib/config";
+
 const included = [
   "Проживання у 2-місних номерах у 3–4★ готелях",
   "Харчування: сніданки + ще один прийом їжі щодня",
@@ -58,6 +60,17 @@ export function Price() {
             <h2 className="mt-3 font-display font-black text-4xl sm:text-5xl text-ink text-balance">
               У вартість входить
             </h2>
+
+            <p className="mt-3 text-sm text-ink/65">
+              Компактна група ·{" "}
+              {SPOTS_LEFT === 0 ? (
+                <span className="font-semibold text-ink">набір закрито</span>
+              ) : (
+                <span className="font-semibold text-ink">
+                  залишилось {SPOTS_LEFT} {spotsNoun(SPOTS_LEFT)}
+                </span>
+              )}
+            </p>
 
             <ul className="mt-8 grid sm:grid-cols-2 gap-3">
               {included.map((it) => (
