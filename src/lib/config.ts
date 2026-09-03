@@ -3,7 +3,7 @@
  * Set SPOTS_LEFT to 0 to switch both the hero badge and the pricing line
  * to their closed ("набір закрито") state.
  */
-export const SPOTS_LEFT: number = 4;
+export const SPOTS_LEFT: number = 2;
 
 /**
  * Ukrainian plural for "місце": 1 місце / 2–4 місця / 5+ місць.
