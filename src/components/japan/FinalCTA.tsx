@@ -24,7 +24,6 @@ const formSchema = z.object({
     .trim()
     .min(1, { message: "Вкажіть e-mail" })
     .email({ message: "Перевірте, будь ласка, адресу e-mail" }),
-  promo: z.string().trim().optional(),
   children: z.string().trim().min(1, { message: "Це поле обовʼязкове" }),
   // Honeypot — must stay empty for real visitors.
   website: z.string().optional(),
@@ -43,7 +42,6 @@ export function FinalCTA() {
       name: "",
       phone: "",
       email: "",
-      promo: "",
       children: "",
       website: "",
     },
@@ -66,7 +64,6 @@ export function FinalCTA() {
       name: values.name,
       phone: values.phone,
       email: values.email,
-      promo: values.promo,
       children: values.children,
     });
 
@@ -182,27 +179,6 @@ export function FinalCTA() {
                           inputMode="email"
                           placeholder="you@example.com"
                           autoComplete="email"
-                          className="h-11 rounded-xl bg-white focus-visible:ring-violet-400"
-                          {...field}
-                        />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="promo"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>
-                        Промокод{" "}
-                        <span className="font-normal text-foreground/40">(за наявності)</span>
-                      </FormLabel>
-                      <FormControl>
-                        <Input
-                          placeholder="Якщо у Вас є промокод"
                           className="h-11 rounded-xl bg-white focus-visible:ring-violet-400"
                           {...field}
                         />

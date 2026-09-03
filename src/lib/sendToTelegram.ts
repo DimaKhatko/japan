@@ -2,7 +2,6 @@ export interface ApplicationData {
   name: string;
   phone: string;
   email: string;
-  promo?: string;
   children?: string;
 }
 
@@ -35,7 +34,6 @@ export async function sendToTelegram(data: ApplicationData): Promise<SendResult>
     `Ім'я: ${data.name}`,
     `Телефон: ${data.phone}`,
     `E-mail: ${data.email}`,
-    `Промокод: ${data.promo || "—"}`,
     `Діти: ${data.children || "—"}`,
     "———",
     "Джерело: japan landing",
