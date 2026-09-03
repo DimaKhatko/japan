@@ -134,7 +134,7 @@ export function Footer() {
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-center text-xs text-white/50 sm:flex-row sm:text-left">
           <span>© {new Date().getFullYear()} Point Camp · Japan. Усі права захищені.</span>
           <a
-            href="https://www.pointcamp.com.ua/croatia/"
+            href="https://croatia.pointcamp.com.ua/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-colors hover:text-white"

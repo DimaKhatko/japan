@@ -9,7 +9,7 @@ const links: { href: string; label: string; external?: boolean }[] = [
   { href: "#program", label: "Програма" },
   { href: "#price", label: "Вартість" },
   { href: "#contact", label: "Контакти" },
-  { href: "https://www.pointcamp.com.ua/croatia/", label: "Croatia'26", external: true },
+  { href: "https://croatia.pointcamp.com.ua/", label: "Croatia'26", external: true },
 ];
 
 export function Header() {
