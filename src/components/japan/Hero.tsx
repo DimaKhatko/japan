@@ -16,24 +16,21 @@ export function Hero() {
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div className="text-white animate-fade-up">
           <div className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-4 py-1.5 text-xs font-medium tracking-widest uppercase border border-white/20">
-            <span className="w-2 h-2 rounded-full bg-white animate-pulse" />
-            Point Camp · Japan 2026
-          </div>
-
-          <h1 className="mt-5 font-display font-[840] leading-[0.92] text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
-            Подорож, що змінює уявлення про світ
-          </h1>
-
-          <div className="mt-5 inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-4 py-1.5 text-xs font-medium tracking-widest uppercase border border-white/20">
             <span className="w-2 h-2 rounded-full bg-white" />
             {SPOTS_LEFT === 0
               ? "Набір закрито · лист очікування"
               : `Останні ${SPOTS_LEFT} ${spotsNoun(SPOTS_LEFT)}`}
           </div>
 
+          <h1 className="mt-5 font-display font-[840] leading-[0.92] text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
+            Подорож, що змінює уявлення про світ
+          </h1>
+
+          <div className="mt-5 text-2xl font-semibold text-white">21–30 жовтня 2026 · 3150 €</div>
+
           <p className="mt-6 text-lg lg:text-xl text-white/90 max-w-md text-balance">
-            10 днів у Японії для підлітків та молоді. Tokio, Кіото, Нара, Осака — маленькою групою,
-            з досвідченим супроводом і простором, щоб усе осмислити.
+            10 днів у Японії для підлітків та молоді. Токіо, Кіото, Нара, Осака — малою групою, з
+            досвідченим супроводом.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -49,10 +46,6 @@ export function Hero() {
             >
               +38 066 221 73 73
             </a>
-          </div>
-
-          <div className="mt-10 text-sm text-white/85 tracking-wide">
-            10 днів / 9 ночей · Tokio–Кіото–Нара–Осака · мала група · 21–30 жовтня 2026 · 3150 €
           </div>
         </div>
 
