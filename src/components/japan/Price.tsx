@@ -61,16 +61,18 @@ export function Price() {
               У вартість входить
             </h2>
 
-            <p className="mt-3 text-sm text-ink/65">
-              Компактна група ·{" "}
-              {SPOTS_LEFT === 0 ? (
-                <span className="font-semibold text-ink">набір закрито</span>
-              ) : (
+            {SPOTS_LEFT === 0 ? (
+              <div className="mt-3 inline-flex items-center rounded-full bg-primary px-5 py-2 font-display font-black text-sm tracking-widest uppercase text-primary-foreground shadow-red-glow">
+                Sold out
+              </div>
+            ) : (
+              <p className="mt-3 text-sm text-ink/65">
+                Компактна група ·{" "}
                 <span className="font-semibold text-ink">
                   залишилось {SPOTS_LEFT} {spotsNoun(SPOTS_LEFT)}
                 </span>
-              )}
-            </p>
+              </p>
+            )}
 
             <ul className="mt-8 grid sm:grid-cols-2 gap-3">
               {included.map((it) => (

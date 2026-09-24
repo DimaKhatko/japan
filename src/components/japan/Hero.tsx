@@ -15,12 +15,16 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8 grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
         <div className="text-white animate-fade-up">
-          <div className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-4 py-1.5 text-xs font-medium tracking-widest uppercase border border-white/20">
-            <span className="w-2 h-2 rounded-full bg-white" />
-            {SPOTS_LEFT === 0
-              ? "Набір закрито · лист очікування"
-              : `Останні ${SPOTS_LEFT} ${spotsNoun(SPOTS_LEFT)}`}
-          </div>
+          {SPOTS_LEFT === 0 ? (
+            <div className="inline-flex items-center rounded-full bg-white px-5 py-2 font-display font-black text-sm tracking-widest uppercase text-primary">
+              Sold out
+            </div>
+          ) : (
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/15 backdrop-blur px-4 py-1.5 text-xs font-medium tracking-widest uppercase border border-white/20">
+              <span className="w-2 h-2 rounded-full bg-white" />
+              {`Останні ${SPOTS_LEFT} ${spotsNoun(SPOTS_LEFT)}`}
+            </div>
+          )}
 
           <h1 className="mt-5 font-display font-[840] leading-[0.92] text-4xl sm:text-5xl md:text-7xl lg:text-8xl">
             Подорож, що змінює уявлення про світ
