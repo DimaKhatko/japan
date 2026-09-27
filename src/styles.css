@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "Kyiv Type Sans";
-  src: url("/fonts/KyivTypeSans-VarGX.woff2") format("woff2");
+  src: url("./assets/fonts/KyivTypeSans-VarGX.woff2") format("woff2");
   font-weight: 100 1000;
   font-style: normal;
   font-display: swap;
