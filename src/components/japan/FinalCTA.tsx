@@ -112,7 +112,7 @@ export function FinalCTA() {
                 Дякуємо, заявку отримано!
               </h3>
               <p className="mx-auto mt-2 max-w-sm text-foreground/70">
-                Ми звʼяжемося з Вами найближчим часом. Якщо зручніше — можете написати нам напряму,
+                Ми звʼяжемося з вами найближчим часом. Якщо зручніше — можете написати нам напряму,
                 посилання нижче.
               </p>
               <Button
@@ -135,7 +135,7 @@ export function FinalCTA() {
                       <FormLabel>Імʼя</FormLabel>
                       <FormControl>
                         <Input
-                          placeholder="Ваше імʼя"
+                          placeholder="ваше імʼя"
                           autoComplete="name"
                           className="h-11 rounded-xl bg-white focus-visible:ring-violet-400"
                           {...field}
