@@ -36,6 +36,7 @@ export const Route = createFileRoute("/")({
       { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://japan.pointcamp.com.ua/" }],
   }),
   component: Index,
 });

@@ -89,7 +89,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Освітні подорожі та табори Point Camp: досвід, менторство і безпека. Подорож до Японії 2026 для підлітків.",
       },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary" },
+      { property: "og:site_name", content: "Point Camp" },
+      { property: "og:locale", content: "uk_UA" },
       { name: "theme-color", content: "#4A316D" },
     ],
     links: [
@@ -112,7 +113,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="uk">
       <head>
         {/* Google Tag Manager */}
         <script
