@@ -13,6 +13,7 @@ import { Moments } from "@/components/japan/Moments";
 import { FinalCTA } from "@/components/japan/FinalCTA";
 import { Footer } from "@/components/japan/Footer";
 import { StickyApplyButton } from "@/components/japan/StickyApplyButton";
+import { SoldOutModal } from "@/components/japan/SoldOutModal";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -60,6 +61,7 @@ function Index() {
       </main>
       <Footer />
       <StickyApplyButton />
+      <SoldOutModal />
     </div>
   );
 }
