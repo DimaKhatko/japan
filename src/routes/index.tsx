@@ -15,6 +15,55 @@ import { Footer } from "@/components/japan/Footer";
 import { StickyApplyButton } from "@/components/japan/StickyApplyButton";
 import { SoldOutModal } from "@/components/japan/SoldOutModal";
 
+const SITE_URL = "https://japan.pointcamp.com.ua/";
+const ORG_ID = "https://pointcamp.com.ua/#organization";
+
+/**
+ * JSON-LD @graph: the brand (same @id on every Point Camp landing, so crawlers and
+ * AI search merge them into one entity) and this page. The autumn 2026 trip is over,
+ * so there is deliberately no Event/Offer node: add one (dates, price, availability)
+ * together with the next season's copy. Everything here must match the visible page.
+ */
+function structuredData() {
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": ORG_ID,
+        name: "Point Camp",
+        alternateName: "PointCamp",
+        url: "https://pointcamp.com.ua/",
+        logo: `${SITE_URL}favicon-512x512.png`,
+        foundingDate: "2011",
+        sameAs: [
+          "https://www.facebook.com/pointcamp",
+          "https://www.instagram.com/point_camp",
+          "https://t.me/pointcamp",
+        ],
+        contactPoint: {
+          "@type": "ContactPoint",
+          telephone: "+380662217373",
+          contactType: "customer service",
+          email: "contact@pointcamp.com.ua",
+          availableLanguage: ["uk"],
+        },
+      },
+      {
+        "@type": "WebPage",
+        "@id": `${SITE_URL}#webpage`,
+        url: SITE_URL,
+        name: "Point Camp · Japan — подорож до Японії для підлітків та молоді",
+        description:
+          "Подорож до Японії для підлітків та молоді: Токіо, Кіото, Нара, Осака. Досвід, менторство і безпека — 10 днів, що змінюють уявлення про світ.",
+        inLanguage: "uk",
+        primaryImageOfPage: `${SITE_URL}og-image.jpg`,
+        publisher: { "@id": ORG_ID },
+      },
+    ],
+  };
+}
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -37,7 +86,13 @@ export const Route = createFileRoute("/")({
       { property: "og:image:height", content: "630" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://japan.pointcamp.com.ua/" }],
+    links: [{ rel: "canonical", href: SITE_URL }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify(structuredData()),
+      },
+    ],
   }),
   component: Index,
 });
