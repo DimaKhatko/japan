@@ -73,6 +73,8 @@ export const Route = createFileRoute("/")({
         content:
           "Подорож до Японії для підлітків та молоді: Токіо, Кіото, Нара, Осака. Досвід, менторство і безпека — 10 днів, що змінюють уявлення про світ.",
       },
+      // Bing Webmaster Tools site verification: keep permanently (removing it unverifies the site).
+      { name: "msvalidate.01", content: "BF4250F50D78E77F8D1A4C8F71BA2B54" },
       { property: "og:title", content: "Point Camp · Japan 2026" },
       {
         property: "og:description",
